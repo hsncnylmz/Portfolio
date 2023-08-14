@@ -69,9 +69,9 @@ body {
 }
 
 .left-column img {
-    width: 100%; /* Görseli responsive yapmak için genişliği %100 olarak ayarlayın */
-    max-width: 420px; /* Maksimum genişlik belirleyin */
-    border-radius: 50%; /* Görselin etrafındaki çerçeve */
+    width: 100%; /* Görseli responsive yapmak için genişliği %100 */
+    max-width: 420px; /* Maksimum genişlik */
+    border-radius: 50%;
 }
 
 /* Menü ve banner kısmının media query ayarı */
@@ -109,6 +109,7 @@ body {
 }
 
 /* HAKKIMDA KISMI */
+
 .hakkimda h2{
     text-align: center;
     font-size: 44px;
@@ -119,10 +120,10 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 40px 20px; /* Üst ve alt padding ile sağdan-soldan padding ayarlandı */
-    margin: 0 auto; /* Sayfayı ortalamak için */
-    max-width: 1200px; /* İstediğiniz genişlik */
-    box-sizing: border-box; /* Padding ve border'ı içeri almak için */
+    padding: 40px 20px; /* Üst ve alt padding ile sağdan-soldan padding */
+    margin: 0 auto; /* Sayfayı ortalamak için kullandım */
+    max-width: 1200px;
+    box-sizing: border-box; /* Padding ve border'ı içeri almak için kullanılır */
 }
 
 .image-column {
@@ -130,42 +131,40 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative; /* Pozisyon ekledik */
+    position: relative; /* Görselin pozisyonunu belirlemek için kullanılır */
 }
 
 .image-column img {
     max-width: 100%;
     height: auto;
     border-radius: 50%;
-    border: 4px solid #4AAAA5; /* Çerçeve kalınlığı artırıldı */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Gölge ayarı güncellendi */
-    transition: transform 0.3s, border 0.3s; /* Border geçişi eklendi */
+    border: 4px solid #4AAAA5; /* Çerçeve kalınlığı */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Gölge ayarı */
+    transition: transform 0.3s, border 0.3s; /* Border geçişi */
 }
 
 .text-column {
     flex: 2;
     padding: 40px;
     border-radius: 15px; /* Köşelerin yumuşatılması */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Yeni bir hafif gölge ekledik */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* hafif gölge */
 }
 
 .text-column h2 {
     align-items: center;
     text-align: center;
-    font-size: 40px; /* Başlık boyutu artırıldı */
+    font-size: 40px;
     margin-bottom: 15px;
 }
 
 .text-column p {
-    max-width: 90%; /* Metin içeriğinin genişliği sınırlanır */
+    max-width: 90%; /* Metin içeriğinin genişliği buradan ayarlanacak */
     margin-top: 15px;
-    line-height: 1.7; /* Satır yüksekliği ayarı eklendi */
+    line-height: 1.7; /* Satır yüksekliği */
 }
 
-/* HAKKIMDA KISMI BİTİŞ */
+/* Yetenekler kısmı */
 
-
-/* yetenekler kısmı */
 .yeteneklerim h2{
     text-align: center;
     font-size: 44px;
@@ -191,13 +190,13 @@ body {
 .table-cell {
     width: 150px;
     flex: 1;
-    padding: 50px; /* hücrelerin boyutlarını ayarlamak için arttırabilirsin */
+    padding: 50px; /* hücrelerin boyutlarını ayarlamak için */
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
     margin-bottom: 20px;
-    margin-left: 40px; /*Hücreler arasında boşluk ayarlama */
+    margin-left: 40px; /* Hücreler arasında boşluk ayarlama */
 }
 
 .table-cell:hover { /* hücerelerin hover ayarı */
@@ -230,6 +229,7 @@ body {
 }
 
 /* CV Bölümü ------- */
+
 .cv-baslik h2{
     text-align: center;
     font-size: 44px;
@@ -314,6 +314,7 @@ hr{
 }
 
 /* Responsive tasarım */
+
 @media (max-width: 768px) {
     .fotercontainer {
         flex-direction: column;
